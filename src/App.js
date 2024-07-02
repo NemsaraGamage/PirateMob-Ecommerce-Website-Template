@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import MainPage from './components/pages/MainPage';
 
-function App() {
+// npm run deploy
+
+const RouteConfig = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      
+      <Routes>
+        {/* Mainpage routes */}
+        <Route index element={<MainPage />} />
+        <Route path='/AutoTraders-Ecommerce-Website-Template' element={<MainPage />} />
+       
+       {/* Vehical Page */}
+        {/* <Route path="/VehiclePage" element={<VehiclePage></VehiclePage>} /> */}
+
+        {/* Plans Page */}
+        {/* <Route path="/plan" element={<Plans></Plans>} /> */}
+
+      </Routes>
+    </Router>
   );
 }
 
-export default App;
+export default RouteConfig;
