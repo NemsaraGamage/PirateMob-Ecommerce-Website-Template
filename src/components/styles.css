@@ -5,6 +5,25 @@
     font-family: 'Arial, sans-serif';
 }
 
+body {
+    background-color: #28282B;
+}
+
+@font-face {
+    font-family: 'BonaNovaSC-Regular';
+    src: url(fonts/Bona_Nova_SC/BonaNovaSC-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Oxygen-Regular';
+    src: url(fonts/Oxygen/Oxygen-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Signika-VariableFont_GRAD';
+    src: url(fonts/Signika/Signika-VariableFont_GRAD\,wght.ttf)
+}
+
 /* --------------------- navigation bar --------------------- */
 .navbar {
     color: #fff;
@@ -12,16 +31,16 @@
     align-items: center;
     padding: 10px;
     padding-top: 12px;
-    background-color: #343a40; 
-    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    background-color: #FAF9F6;
 }
 
 .navbar .logo {
-    font-size: 24px;
+    font-size: 27px;
     font-weight: bold;
     text-decoration: none;
-    color: #ffc107; 
+    color: #28282B; 
     margin-right: auto;
+    font-family: 'BonaNovaSC-Regular';
 }
 
 .navbar .nav-links {
@@ -34,14 +53,16 @@
 .navbar .nav-link, .a {
     margin: 0 20px; 
     text-decoration: none;
-    color: #f8f9fa; 
+    color: #020403; 
     font-size: 18px;
     transition: color 0.3s ease, font-weight 0.3s ease; 
     position: relative;
+    font-family: 'Signika-VariableFont_GRAD';
+    font-weight: 900;
 }
 
 .navbar .nav-link:hover {
-    color: #ffc107;
+    color: 	#C19A6B;
     font-weight: bold;
 }
 
@@ -77,6 +98,7 @@
     text-decoration: none;
     color: #000;
     cursor: pointer;
+    font-family: 'Oxygen-Regular';
 }
 
 .dropdown-item:hover {
@@ -95,4 +117,175 @@
     border: none;
     border-radius: 4px;
     width: 280px;
+}
+
+/* ------------------- Main page ------------------- */
+
+.logoCon {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.logoCon h3{
+    font-size: 4em;
+    font-family: 'BonaNovaSC-Regular';
+    letter-spacing: 0.5em;
+    margin-bottom: -10px;
+    color: 	#C19A6B;
+}
+
+.logoCon img {
+    width: 585px;
+}
+
+/* --------------------- footer --------------------- */
+
+.footer {
+    background-color: #004792;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: -10%;
+    margin-top: 80px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 18px;
+  }
+  
+  .social-icons a:hover {
+    color: black; 
+  }
+
+@media (max-width: 1100px) {
+    
+}
+
+@media (max-width: 870px) {
+    .nav-link {
+        margin: 0 10px;
+    }
+
+    /* main page */
+
+    .logoCon img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 795px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar-logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar .logo {
+       margin: 0 auto;
+    }
+    
+
+    .logo-img {
+        width: 100px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    .auth-button {
+        margin: 5px 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .lineNav{
+        display: none;
+    }
+
+    /* main page */
+
+    .logoCon h3{
+        font-size: 3.5em;
+        letter-spacing: 0.4em;
+    }
+    
+}
+
+@media (max-width: 590px) {
+
+    /* main page */
+    .logoCon h3{
+        font-size: 3.1em;
+        letter-spacing: 0.4em;
+        margin-bottom: 10px;
+    }
+
 }
