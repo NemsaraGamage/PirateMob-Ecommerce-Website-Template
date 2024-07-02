@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PirateMob-Ecommerce-Website-Template/static/css/main.59b248b0.css",
+    "main.js": "/PirateMob-Ecommerce-Website-Template/static/js/main.10fc946d.js",
+    "static/js/453.159f1806.chunk.js": "/PirateMob-Ecommerce-Website-Template/static/js/453.159f1806.chunk.js",
+    "index.html": "/PirateMob-Ecommerce-Website-Template/index.html",
+    "main.59b248b0.css.map": "/PirateMob-Ecommerce-Website-Template/static/css/main.59b248b0.css.map",
+    "main.10fc946d.js.map": "/PirateMob-Ecommerce-Website-Template/static/js/main.10fc946d.js.map",
+    "453.159f1806.chunk.js.map": "/PirateMob-Ecommerce-Website-Template/static/js/453.159f1806.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.59b248b0.css",
+    "static/js/main.10fc946d.js"
+  ]
+}
