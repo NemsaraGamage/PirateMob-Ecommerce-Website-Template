@@ -11,7 +11,7 @@ const RouteConfig = () => {
       <Routes>
         {/* Mainpage routes */}
         <Route index element={<MainPage />} />
-        <Route path='/AutoTraders-Ecommerce-Website-Template' element={<MainPage />} />
+        <Route path='/PirateMob-Ecommerce-Website-Template/' element={<MainPage />} />
        
        {/* Vehical Page */}
         {/* <Route path="/VehiclePage" element={<VehiclePage></VehiclePage>} /> */}
