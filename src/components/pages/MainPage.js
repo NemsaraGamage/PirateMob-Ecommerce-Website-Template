@@ -10,7 +10,22 @@ import p1 from '../pics/p1c.jpg'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
+import gL1 from '../pics/gameLis/1.jpg'
+import gL2 from '../pics/gameLis/2.jpg'
+import gL3 from '../pics/gameLis/3.jpg'
+import gL4 from '../pics/gameLis/4.jpg'
+import gL5 from '../pics/gameLis/5.jpg'
+import gL6 from '../pics/gameLis/6.jpg'
+
 const MainPage = () => {
+
+    const gameist1= [
+        { gameImg : gL1, desName: 'Hogwarts Legacy' , name: 'Hogwarts Legacy', cata: 'Action-Adventure-RPG', price: '$20.00' },
+        { gameImg : gL2, desName: 'ELDEN RING' , name: 'ELDEN RING', cata: 'Solus like-Open World-RPG', price: '$14.99' },
+        { gameImg : gL3, desName: 'Cyberpunk 2077' , name: 'Cyberpunk 2077', cata: 'Sci-fi-Open World-RPG', price: '$25.00' },
+        { gameImg : gL5, desName: 'Star Wars Jedi: Survivor' , name: 'Star Wars Jedi: Survivor', cata: 'Action-Adventure-Solus like', price: '$13.00' },
+        { gameImg : gL6, desName: 'The Witcher 3: Wild Hunt' , name: 'The Witcher 3', cata: 'Action-Adventure-RPG', price: '$3.00' },
+    ]
 
     return (
         <>
@@ -50,6 +65,23 @@ const MainPage = () => {
             </div>
         </div>
 
+        <div className="gameCon">
+            <div className="game-container">
+                <div className="game-grid-container">
+                    {gameist1.map((game, index) => (
+                        <div key={index} className="game-grid-item">
+                            <img src={game.gameImg} alt={game.desName} />
+                            <p>{game.name}</p>
+                            <p>{game.cata}</p>
+                            <div className="price-button-container">
+                                <p>{game.price}</p>
+                                <button>Add Cart</button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
 
         </>
     )
