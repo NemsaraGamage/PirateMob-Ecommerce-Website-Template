@@ -7,15 +7,14 @@ import { useNavigate, Link } from 'react-router-dom';
 import logo from '../pics/logo.png'
 import p1 from '../pics/p1c.jpg'
 
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
-
 import gL1 from '../pics/gameLis/1.jpg'
 import gL2 from '../pics/gameLis/2.jpg'
 import gL3 from '../pics/gameLis/3.jpg'
 import gL4 from '../pics/gameLis/4.jpg'
 import gL5 from '../pics/gameLis/5.jpg'
 import gL6 from '../pics/gameLis/6.jpg'
+
+import cartLogo from '../pics/cartLogo2.png'
 
 const MainPage = () => {
 
@@ -61,6 +60,7 @@ const MainPage = () => {
                 </div>
                 <div className="miniSearch-bar">
                     <input type="text" placeholder="Search..." />
+                    <img src={cartLogo}></img>
                 </div>
             </div>
         </div>

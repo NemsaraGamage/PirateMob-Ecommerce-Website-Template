@@ -229,6 +229,12 @@ body {
     width: 260px;
 }
 
+.miniSearch-bar img{
+    width: 36px;
+    margin: 0 5px 0 20px;
+    cursor: pointer;
+}
+
 /* game list */
 
 .gameCon {
@@ -267,7 +273,7 @@ body {
     font-family: 'BonaNovaSC-Regular';
     font-size: 19px;
     font-weight: 900;
-    color: #1a75ff;
+    color: #6699CC;
 }
 
 .game-grid-item p:nth-of-type(2){
@@ -284,8 +290,8 @@ body {
 
 .price-button-container p {
     margin-right: 10px; 
-    font-family: 'Signika-VariableFont_GRAD';
-    font-size: 17px;
+    font-family: 'Oxygen-Regular';
+    font-size: 15px;
 }
 
 .game-grid-item button {
