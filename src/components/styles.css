@@ -331,11 +331,10 @@ body {
 /* carsoule */
 
 .carouselCon {
-    display: flex;
     justify-content: center;
     margin: 0 auto;
     margin-top: 80px;
-    max-width: 1200px; /* Adjust this value as needed */
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -648,6 +647,10 @@ body {
 
    .caroPrice-button-container {
         margin-top: 15px;
+    }
+
+    .carousel-item button {
+        margin-left: 80px;
     }
 
 }

@@ -46,7 +46,7 @@ const MainPage = () => {
 
     const addToCart = (game) => {
         setCart([...cart, game]);
-        console.log('it worked')
+        console.log('Game added to cart:', game);
     };
 
     const responsive = {
@@ -124,7 +124,6 @@ const MainPage = () => {
             </div>
 
             {/* Carousel */}
-
             <div className='carouselCon'>
                 <Carousel responsive={responsive}>
                     {caroList1.map((game, index) => (

@@ -5,19 +5,19 @@ const FooterBottom = () => {
     return (
         <>
 
-        <div class="footer">
-            <div class="footer-container">
-                <div class="footer-section">
+        <div className="footer">
+            <div className="footer-container">
+                <div className="footer-section">
                     <h4>About Us</h4>
                     <p>All your motor desires can be found.</p>
                     </div>
-                    <div class="footer-section">
+                    <div className="footer-section">
                     <h4>Contact</h4>
                     <p>Email: autotraders@company.com</p>
                     </div>
-                    <div class="footer-section">
+                    <div className="footer-section">
                     <h4>Follow Us</h4>
-                    <div class="social-icons">
+                    <div className="social-icons">
                         <a href="#">Facebook</a>
                         <a href="#">Instagram</a>
                         <a href="#">Twitter</a>
