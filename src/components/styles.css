@@ -375,6 +375,7 @@ body {
     font-size: 25px;
     text-align: center;
     margin-top: 20px;
+    font-family: 'BonaNovaSC-Regular';
 }
 
 .carousel-item p:nth-of-type(2) {
@@ -397,6 +398,7 @@ body {
     font-family: 'Oxygen-Regular';
     font-size: 15px;
     color: #6699CC;
+    font-weight: 600;
 }
 
 .carousel-item button {
@@ -433,7 +435,6 @@ body {
 
 .salesHead{
     margin-top: 90px;
-    margin-bottom: 30px;
     text-align: center;
     font-size: 32px;
     color: #C19A6B;
@@ -448,9 +449,147 @@ body {
 }
 
 .salePriceCon p:nth-of-type(2){
-    color: red;
+    color: #FF0800;
     text-decoration: none;
     font-weight: 800;
+}
+
+.dis-item{
+    margin-top: 30px;
+}
+
+/* free games */
+
+.freegameCon {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.freegame-container {
+    max-width: 1200px; 
+    width: 100%;
+}
+
+.freegame-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr)); /* Adjust the minmax value as needed */
+    gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.giftHeadCon {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between items */
+    width: 77%;
+    max-width: 1200px; /* Set a max width to prevent it from becoming too wide */
+    margin: 90px auto 30px auto;
+}
+
+.giftHead {
+    font-size: 32px;
+    color: #6699CC;
+    font-family: 'BonaNovaSC-Regular';
+    font-weight: 100;
+    font-weight: 500;
+    margin: 0; /* Remove margin to ensure proper alignment */
+}
+
+.giftHeadCon img {
+    width: 60px;
+    margin-left: 15px; 
+}
+
+.freegame-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px; 
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: ghostwhite;
+}
+
+.freegame-grid-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.freegame-grid-item img {
+    width: 100%;
+    height: 290px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 5px 0 0;
+}
+
+.freegame-grid-item p {
+    margin: 5px 0;
+    color: #6699CC;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'BonaNovaSC-Regular';
+    font-weight: bold;
+}
+
+.freegame-grid-item p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    margin-top: 8px;
+}
+
+.freegame-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.freegame-button-container p {
+    margin-right: 10px; 
+    font-family: 'Oxygen-Regular';
+    color: #6699CC;
+    font-weight: 900;
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+.freegame-button-container p:nth-of-type(2){
+    color: #FF0800;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.freegame-grid-item button {
+    padding: 8px;
+    border: 2px solid #004080;
+    background-color: #004466;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Signika-VariableFont_GRAD';
+    margin-left: 80px;
+   
+}
+
+.freegame-grid-item button:hover {
+    background-color: #004080;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.freegame-grid-item button:active {
+    background-color: #00264d;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* --------------------- footer --------------------- */
@@ -526,6 +665,17 @@ body {
         height: 260px;
     }
 
+    /* banner */
+    .bancarousel-item img{
+        width: 100%;
+    }
+
+    /* free games */
+
+    .freegame-grid-item img {
+        height: 270px;
+    }
+
 }
 
 @media (max-width: 870px) {
@@ -544,6 +694,21 @@ body {
      .carousel-item img {
         width: 100%;
         height: 200px;
+    }
+
+    /* banner */
+    .bancarousel-item img{
+        width: 100%;
+    }
+
+    /* free games */
+
+    .freegame-grid-item img {
+        height: 250px;
+    }
+
+    .freegame-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
     }
 
 }
@@ -654,6 +819,19 @@ body {
         width: 100%;
     }
 
+    /* banner */
+    .bancarousel-item img{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 712px) {
+
+    /* free games */
+    .freegame-grid-item img {
+        height: 300px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -683,6 +861,12 @@ body {
 
     .carousel-item button {
         margin-left: 80px;
+    }
+
+    /* free games */
+
+    .freegame-grid-item img {
+        height: 320px;
     }
 
 }
@@ -724,7 +908,18 @@ body {
 
     .carousel-item img {
         width: 100%;
-        height: 150px;
+        height: 240px;
+    }
+
+    /* banner */
+    .bancarousel-item img{
+        width: 100%;
+    }
+
+    /* free games */
+
+    .freegame-grid-item img {
+        height: 260px;
     }
 
 }

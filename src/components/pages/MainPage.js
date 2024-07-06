@@ -35,6 +35,11 @@ import s8 from '../pics/gameLis/s8.jpg';
 import s9 from '../pics/gameLis/s9.jpg';
 import s10 from '../pics/gameLis/s10.jpg';
 
+import giftBox from '../pics/g3.png';
+
+import f1 from '../pics/gameLis/f1.jpg';
+import f2 from '../pics/gameLis/f2.jpg';
+
 const MainPage = () => {
     const [cart, setCart] = useState([]);
 
@@ -68,6 +73,11 @@ const MainPage = () => {
         { gameImg: s10, desName: 'Spiderman Remastered ', name: 'Spiderman Remastered ', cata: 'Action-Story-Adventure', price: '$55.00', salePrice: '$42.20' },
     ];
 
+    const freeGames = [
+        { gameImg: f1, desName: 'Devil May Cry 5', name: 'Devil May Cry 5', cata: 'Action-Adventure-RPG', price: '$25.00', salePrice: 'Free' },
+        { gameImg: f2, desName: 'The Elder Scrolls® Online', name: 'The Elder Scrolls® Online', cata: 'Adventure-Open World-RPG', price: '$8.00', salePrice: 'Free' },
+    ];
+
     const addToCart = (game) => {
         setCart([...cart, game]);
         console.log('Game added to cart:', game);
@@ -87,7 +97,7 @@ const MainPage = () => {
             items: 2
         },
         mobile: {
-            breakpoint: { max: 464, min: 0 },
+            breakpoint: { max: 590, min: 0 },
             items: 1
         }
     };
@@ -151,7 +161,7 @@ const MainPage = () => {
 
             {/* Carousel */}
             <div className='carouselCon'>
-                <h3>Our Favorites</h3>
+                <h3>OUR FAVORITES</h3>
                 <Carousel responsive={responsive}>
                     {caroList1.map((game, index) => (
                         <div key={index} className="carousel-item">
@@ -168,16 +178,40 @@ const MainPage = () => {
             </div>
 
             {/* discount list */}
-            <h3 className='salesHead'>On Sale!</h3>
+            <h3 className='salesHead'>ON SALE</h3>
             <div className="gameCon">
                 <div className="game-container">
                     <div className="game-grid-container">
                         {salesList.map((game, index) => (
-                            <div key={index} className="game-grid-item">
+                            <div key={index} className="game-grid-item dis-item">
                                 <img src={game.gameImg} alt={game.desName} />
                                 <p>{game.name}</p>
                                 <p>{game.cata}</p>
                                 <div className="price-button-container salePriceCon">
+                                    <p>{game.price}</p>
+                                    <p>{game.salePrice}</p>
+                                    <button onClick={() => addToCart(game)}>Add Cart</button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+             {/* giftbox */}
+             <div className='giftHeadCon'>
+                <h3 className='giftHead'>Free This Week</h3>
+                <img src={giftBox}></img>
+             </div>
+             <div className="freegameCon">
+                <div className="freegame-container">
+                    <div className="freegame-grid-container">
+                        {freeGames.map((game, index) => (
+                            <div key={index} className="freegame-grid-item">
+                                <img src={game.gameImg} alt={game.desName} />
+                                <p>{game.name}</p>
+                                <p>{game.cata}</p>
+                                <div className="freegame-button-container">
                                     <p>{game.price}</p>
                                     <p>{game.salePrice}</p>
                                     <button onClick={() => addToCart(game)}>Add Cart</button>
