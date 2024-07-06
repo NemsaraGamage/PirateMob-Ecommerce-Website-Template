@@ -24,6 +24,17 @@ import cL4 from '../pics/gameLis/c4.jpg';
 import cL5 from '../pics/gameLis/c5.jpg';
 import cL6 from '../pics/gameLis/c6.jpg';
 
+import s1 from '../pics/gameLis/s1.jpg';
+import s2 from '../pics/gameLis/s2.jpg';
+import s3 from '../pics/gameLis/s3.jpg';
+import s4 from '../pics/gameLis/s4.jpg';
+import s5 from '../pics/gameLis/s5.jpg';
+import s6 from '../pics/gameLis/s6.jpg';
+import s7 from '../pics/gameLis/s7.jpg';
+import s8 from '../pics/gameLis/s8.jpg';
+import s9 from '../pics/gameLis/s9.jpg';
+import s10 from '../pics/gameLis/s10.jpg';
+
 const MainPage = () => {
     const [cart, setCart] = useState([]);
 
@@ -36,12 +47,25 @@ const MainPage = () => {
     ];
 
     const caroList1 = [
-        { gameImg: cL1, desName: 'Assassin Creed Valhalla', name: 'Assassins Creed Valhalla', cata: 'Action-Adventure-RPG', price: '$20.00' },
-        { gameImg: cL2, desName: 'Ghost of Tsushima', name: 'Ghost of Tsushima', cata: 'Action-Adventure-Open World', price: '$14.99' },
-        { gameImg: cL3, desName: 'Fallout 4', name: 'Fallout 4', cata: 'Sci-fi-Open World-RPG', price: '$25.00' },
-        { gameImg: cL4, desName: 'Red Dead Redemption 2', name: 'Red Dead Redemption 2', cata: 'Action-Adventure-Open World', price: '$13.00' },
-        { gameImg: cL5, desName: 'Uncharted 4: A Thiefs End', name: 'Uncharted 4: A Thiefs End', cata: 'Action-Adventure-Story', price: '$3.00' },
-        { gameImg: cL6, desName: 'Watch Dogs: Legion', name: 'Watch Dogs: Legion', cata: 'Action-Adventure-Open World', price: '$3.00' },
+        { gameImg: cL1, desName: 'Assassin Creed Valhalla', name: 'Assassins Creed Valhalla', cata: 'Action-Adventure-RPG', price: '$24.00' },
+        { gameImg: cL2, desName: 'Ghost of Tsushima', name: 'Ghost of Tsushima', cata: 'Action-Adventure-Open World', price: '$60.99' },
+        { gameImg: cL3, desName: 'Fallout 4', name: 'Fallout 4', cata: 'Sci-fi-Open World-RPG', price: '$5.00' },
+        { gameImg: cL4, desName: 'Red Dead Redemption 2', name: 'Red Dead Redemption 2', cata: 'Action-Adventure-Open World', price: '$53.00' },
+        { gameImg: cL5, desName: 'Uncharted 4: A Thiefs End', name: 'Uncharted 4: A Thiefs End', cata: 'Action-Adventure-Story', price: '$6.00' },
+        { gameImg: cL6, desName: 'Watch Dogs: Legion', name: 'Watch Dogs: Legion', cata: 'Action-Adventure-Open World', price: '$2.00' },
+    ];
+
+    const salesList = [
+        { gameImg: s1, desName: 'Grand Theft Auto 5', name: 'Grand Theft Auto 5', cata: 'Action-Adventure-Crime', price: '$10.00', salePrice: '$4.25' },
+        { gameImg: s2, desName: 'Monster Hunter', name: 'Monster Hunter', cata: 'Action-RPG-Monster', price: '$14.99', salePrice: '$8.36' },
+        { gameImg: s3, desName: 'Hitman 3', name: 'Hitman 3', cata: 'Action-Stealth-Singleplayer', price: '$25.00', salePrice: '$6.22' },
+        { gameImg: s4, desName: 'Days Gone', name: 'Days Gone', cata: 'Open World-Zombies-Survival', price: '$11.00', salePrice: '$7.66' },
+        { gameImg: s5, desName: 'FarCry 6', name: 'FarCry 6', cata: 'Action-Adventure-RPG', price: '$8.00', salePrice: '$3.99' },
+        { gameImg: s6, desName: 'Horizon Forbidden West', name: 'Horizon Forbidden West', cata: 'Action-Adventure-Open World', price: '$44.00', salePrice: '$23.99' },
+        { gameImg: s7, desName: 'God of War Ragnarök', name: 'God of War Ragnarök', cata: 'Action-Adventure-Story', price: '$64.00', salePrice: '$50.00' },
+        { gameImg: s8, desName: 'Assassins Creed Odyssey', name: 'Assassins Creed Odyssey', cata: 'Action-Adventure-RPG', price: '$23.00', salePrice: '$14.00' },
+        { gameImg: s9, desName: 'Sekiro: Shadows Die Twice', name: 'Sekiro: Shadows Die Twice', cata: 'Action-Story-Souls Like', price: '$14.00', salePrice: '$8.33' },
+        { gameImg: s10, desName: 'Spiderman Remastered ', name: 'Spiderman Remastered ', cata: 'Action-Story-Adventure', price: '$55.00', salePrice: '$42.20' },
     ];
 
     const addToCart = (game) => {
@@ -76,6 +100,7 @@ const MainPage = () => {
                 <img src={logo} alt="Logo" />
             </div>
 
+            {/* mini navbar */}
             <div className="miniNavBarCon">
                 <div className="miniNavBar">
                     <div className="miniNav-links">
@@ -105,6 +130,7 @@ const MainPage = () => {
                 </div>
             </div>
 
+            {/* 1st game list */}
             <div className="gameCon">
                 <div className="game-container">
                     <div className="game-grid-container">
@@ -125,6 +151,7 @@ const MainPage = () => {
 
             {/* Carousel */}
             <div className='carouselCon'>
+                <h3>Our Favorites</h3>
                 <Carousel responsive={responsive}>
                     {caroList1.map((game, index) => (
                         <div key={index} className="carousel-item">
@@ -138,6 +165,27 @@ const MainPage = () => {
                         </div>
                     ))}
                 </Carousel>
+            </div>
+
+            {/* discount list */}
+            <h3 className='salesHead'>On Sale!</h3>
+            <div className="gameCon">
+                <div className="game-container">
+                    <div className="game-grid-container">
+                        {salesList.map((game, index) => (
+                            <div key={index} className="game-grid-item">
+                                <img src={game.gameImg} alt={game.desName} />
+                                <p>{game.name}</p>
+                                <p>{game.cata}</p>
+                                <div className="price-button-container salePriceCon">
+                                    <p>{game.price}</p>
+                                    <p>{game.salePrice}</p>
+                                    <button onClick={() => addToCart(game)}>Add Cart</button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
 
             <FooterNav />
