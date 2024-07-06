@@ -1,15 +1,44 @@
 {
   "files": {
-    "main.css": "/PirateMob-Ecommerce-Website-Template/static/css/main.59b248b0.css",
-    "main.js": "/PirateMob-Ecommerce-Website-Template/static/js/main.10fc946d.js",
-    "static/js/453.159f1806.chunk.js": "/PirateMob-Ecommerce-Website-Template/static/js/453.159f1806.chunk.js",
+    "main.css": "/PirateMob-Ecommerce-Website-Template/static/css/main.1f062ac8.css",
+    "main.js": "/PirateMob-Ecommerce-Website-Template/static/js/main.47dfe07f.js",
+    "static/js/453.15bef1ee.chunk.js": "/PirateMob-Ecommerce-Website-Template/static/js/453.15bef1ee.chunk.js",
+    "static/media/logo.png": "/PirateMob-Ecommerce-Website-Template/static/media/logo.92e13542c9bb8bf03796.png",
+    "static/media/Signika-VariableFont_GRAD,wght.ttf": "/PirateMob-Ecommerce-Website-Template/static/media/Signika-VariableFont_GRAD,wght.26fb9c4e91a558eb79b1.ttf",
+    "static/media/BonaNovaSC-Regular.ttf": "/PirateMob-Ecommerce-Website-Template/static/media/BonaNovaSC-Regular.8a9dde859122fadee662.ttf",
+    "static/media/s6.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s6.0def2e81dc41d2ba0b50.jpg",
+    "static/media/s1.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s1.82f6edb56eeb2c5dfbe0.jpg",
+    "static/media/s8.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s8.58df688d60dc93229d36.jpg",
+    "static/media/s7.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s7.34b0f5eb2198263aa220.jpg",
+    "static/media/6.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/6.520b8bf31e4b8cf35ac3.jpg",
+    "static/media/5.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/5.bfcac5879936c2ca9e37.jpg",
+    "static/media/1.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/1.d3ed943a96332f8c2b66.jpg",
+    "static/media/s2.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s2.fa7b4b6cbad68a40f89f.jpg",
+    "static/media/s10.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s10.02271b484f0e51e10887.jpg",
+    "static/media/3.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/3.265c20b3d08cd58fb973.jpg",
+    "static/media/s9.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s9.9a3bd445b46dae44c07d.jpg",
+    "static/media/c3.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/c3.7a4a13e2908b4708e323.jpg",
+    "static/media/c4.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/c4.80606ee93423c6efab16.jpg",
+    "static/media/s5.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s5.622c4138f6f9f73e437f.jpg",
+    "static/media/c6.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/c6.45a6cae7a3fc80f2f7ff.jpg",
+    "static/media/c2.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/c2.b6e194a29a6a5dd14b75.jpg",
+    "static/media/c1.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/c1.51346504cd0c12ce677d.jpg",
+    "static/media/Oxygen-Regular.ttf": "/PirateMob-Ecommerce-Website-Template/static/media/Oxygen-Regular.56e5848476493abbd93e.ttf",
+    "static/media/s4.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s4.dc4c2d339a803e4ea646.jpg",
+    "static/media/2.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/2.3e178d8744cec3a1a2e8.jpg",
+    "static/media/c5.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/c5.315a548aaf19e1e55535.jpg",
+    "static/media/cartLogo2.png": "/PirateMob-Ecommerce-Website-Template/static/media/cartLogo2.7033f67421d5e63955d5.png",
+    "static/media/s3.jpg": "/PirateMob-Ecommerce-Website-Template/static/media/s3.820e3cdbcc51932a0de8.jpg",
+    "static/media/revicons.eot": "/PirateMob-Ecommerce-Website-Template/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/PirateMob-Ecommerce-Website-Template/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/PirateMob-Ecommerce-Website-Template/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/PirateMob-Ecommerce-Website-Template/index.html",
-    "main.59b248b0.css.map": "/PirateMob-Ecommerce-Website-Template/static/css/main.59b248b0.css.map",
-    "main.10fc946d.js.map": "/PirateMob-Ecommerce-Website-Template/static/js/main.10fc946d.js.map",
-    "453.159f1806.chunk.js.map": "/PirateMob-Ecommerce-Website-Template/static/js/453.159f1806.chunk.js.map"
+    "main.1f062ac8.css.map": "/PirateMob-Ecommerce-Website-Template/static/css/main.1f062ac8.css.map",
+    "main.47dfe07f.js.map": "/PirateMob-Ecommerce-Website-Template/static/js/main.47dfe07f.js.map",
+    "453.15bef1ee.chunk.js.map": "/PirateMob-Ecommerce-Website-Template/static/js/453.15bef1ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59b248b0.css",
-    "static/js/main.10fc946d.js"
+    "static/css/main.1f062ac8.css",
+    "static/js/main.47dfe07f.js"
   ]
 }
