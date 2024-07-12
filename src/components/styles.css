@@ -339,7 +339,7 @@ body {
 }
 
 .carouselCon h3{
-    font-size: 32px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
     color: #C19A6B;
@@ -352,7 +352,7 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 30px;
     transition: transform 0.2s, box-shadow 0.2s;
     margin-left: 15px;
 }
@@ -452,7 +452,7 @@ body {
 .salesHead{
     margin-top: 70px;
     text-align: center;
-    font-size: 32px;
+    font-size: 40px;
     color: #C19A6B;
     font-family: 'BonaNovaSC-Regular';
     letter-spacing: 0.1em;
@@ -478,7 +478,7 @@ body {
 
 .cataCarousel h3{
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .cataCarousel-item:hover {
@@ -531,11 +531,13 @@ body {
     font-family: 'BonaNovaSC-Regular';
     font-weight: 900;
     margin: 0; /* Remove margin to ensure proper alignment */
+    font-size: 40px;
+    letter-spacing: 0.1em;
 }
 
 .giftHeadCon img {
-    width: 60px;
-    margin-left: 15px; 
+    width: 70px;
+    /* margin-left: 15px;  */
 }
 
 .freegame-grid-item {
@@ -682,6 +684,17 @@ body {
   .social-icons a:hover {
     color: black; 
   }
+
+/* --------------------- category --------------------- */
+
+.cataPageHead{
+    margin: 50px 0 50px 0;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'BonaNovaSC-Regular';
+    letter-spacing: 0.1em;
+}
 
 @media (max-width: 1100px) {
 

@@ -8,7 +8,7 @@ import 'react-multi-carousel/lib/styles.css';
 
 // npm run deploy
 
-const MainPage = () => {
+const MiniNav = () => {
 
     return (
         <>
@@ -21,19 +21,19 @@ const MainPage = () => {
             <div className="miniNavBarCon">
                 <div className="miniNavBar">
                     <div className="miniNav-links">
-                        <Link to="/" className="miniNav-link">Home</Link>
+                        <Link to="/MainPage" className="miniNav-link">Home</Link>
                         <div className="miniGenre-dropdown">
                             <Link to="#" className="miniNav-link">Categories</Link>
                             <div className="miniDropdown-menu">
-                                <Link to="/comedy" className="miniDropdown-item">Comedy</Link>
-                                <Link to="#" className="miniDropdown-item">Horror</Link>
-                                <Link to="#" className="miniDropdown-item">RPG</Link>
-                                <Link to="#" className="miniDropdown-item">Adventure</Link>
-                                <Link to="#" className="miniDropdown-item">Action</Link>
-                                <Link to="#" className="miniDropdown-item">Thriller</Link>
-                                <Link to="#" className="miniDropdown-item">Mystery</Link>
-                                <Link to="#" className="miniDropdown-item">Family</Link>
-                                <Link to="#" className="miniDropdown-item">War</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">Comedy</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">Horror</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">RPG</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">Adventure</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">Action</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">Thriller</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">Mystery</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">Family</Link>
+                                <Link to="/CategoryPage" className="miniDropdown-item">War</Link>
                             </div>
                         </div>
                         <Link to="/toppicks" className="miniNav-link">Community</Link>
@@ -51,4 +51,4 @@ const MainPage = () => {
     );
 };
 
-export default MainPage;
+export default MiniNav;
