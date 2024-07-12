@@ -431,10 +431,26 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* banner1 */
+
+.ban1Con {
+    width: 100%;
+    margin-top: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ban1Con img {
+    width: 850px; 
+    max-width: 100%;
+}
+
+
 /* sales list */
 
 .salesHead{
-    margin-top: 90px;
+    margin-top: 70px;
     text-align: center;
     font-size: 32px;
     color: #C19A6B;
@@ -456,6 +472,29 @@ body {
 
 .dis-item{
     margin-top: 30px;
+}
+
+/* category carousel  */
+
+.cataCarousel h3{
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.cataCarousel-item:hover {
+    transform: translateY(-2px);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.cataCarousel-item img{
+    width: 78%;
+    border-radius: 4px;
+    height: 260px;
+}
+
+.cataCarousel-item img:hover{
+    border: 2px solid #fff;
 }
 
 /* free games */
@@ -490,8 +529,7 @@ body {
     font-size: 32px;
     color: #6699CC;
     font-family: 'BonaNovaSC-Regular';
-    font-weight: 100;
-    font-weight: 500;
+    font-weight: 900;
     margin: 0; /* Remove margin to ensure proper alignment */
 }
 
@@ -516,14 +554,14 @@ body {
 
 .freegame-grid-item img {
     width: 100%;
-    height: 290px;
+    height: 320px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     border-radius: 5px 5px 0 0;
 }
 
 .freegame-grid-item p {
     margin: 5px 0;
-    color: #6699CC;
+    color: #C19A6B;
     font-size: 25px;
     text-align: center;
     margin-top: 20px;
@@ -653,6 +691,12 @@ body {
         width: 100%;
         height: 190px;
     }
+
+    /* cata  carsoul */
+    .cataCarousel-item img{
+        width: 78%;
+        height: 220px;
+    }
     
 }
 
@@ -668,6 +712,12 @@ body {
     /* banner */
     .bancarousel-item img{
         width: 100%;
+    }
+
+    /* cata  carsoul */
+    .cataCarousel-item img{
+        width: 80%;
+        height: 280px;
     }
 
     /* free games */
@@ -699,6 +749,12 @@ body {
     /* banner */
     .bancarousel-item img{
         width: 100%;
+    }
+
+    /* cata  carsoul */
+    .cataCarousel-item img{
+        width: 78%;
+        height: 240px;
     }
 
     /* free games */
@@ -824,6 +880,18 @@ body {
         width: 100%;
     }
 
+    /* cata  carsoul */
+    .cataCarousel-item img{
+        width: 80%;
+        height: 260px;
+    }
+
+     /* free games */
+
+    .freegame-grid-item img {
+        height: 220px;
+    }
+
 }
 
 @media (max-width: 712px) {
@@ -861,6 +929,12 @@ body {
 
     .carousel-item button {
         margin-left: 80px;
+    }
+
+    /* cata  carsoul */
+    .cataCarousel-item img{
+        width: 90%;
+        height: 260px;
     }
 
     /* free games */
@@ -916,10 +990,16 @@ body {
         width: 100%;
     }
 
+    /* cata  carsoul */
+    .cataCarousel-item img{
+        width: 75%;
+        height: 320px;
+    }
+
     /* free games */
 
     .freegame-grid-item img {
-        height: 260px;
+        height: 250px;
     }
 
 }

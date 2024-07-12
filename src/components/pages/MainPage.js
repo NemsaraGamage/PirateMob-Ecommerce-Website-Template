@@ -3,8 +3,7 @@ import '../styles.css';
 import NavBarHead from "../NavBar";
 import FooterNav from "../Footer";
 import { Link } from 'react-router-dom';
-
-import logo from '../pics/logo.png';
+import MiniNav from "../MiniNav"
 
 import gL1 from '../pics/gameLis/1.jpg';
 import gL2 from '../pics/gameLis/2.jpg';
@@ -39,6 +38,19 @@ import giftBox from '../pics/g3.png';
 
 import f1 from '../pics/gameLis/f1.jpg';
 import f2 from '../pics/gameLis/f2.jpg';
+import f3 from '../pics/gameLis/f3.jpg';
+
+import ban1 from '../pics/ban1.jpg';
+
+import cataCar1 from '../pics/cata/1.jpg';
+import cataCar2 from '../pics/cata/2.jpg';
+import cataCar3 from '../pics/cata/3.jpg';
+import cataCar4 from '../pics/cata/4.jpg';
+import cataCar5 from '../pics/cata/5.jpg';
+import cataCar6 from '../pics/cata/6.jpg';
+import cataCar7 from '../pics/cata/7.jpg';
+
+// npm run deploy
 
 const MainPage = () => {
     const [cart, setCart] = useState([]);
@@ -75,7 +87,17 @@ const MainPage = () => {
 
     const freeGames = [
         { gameImg: f1, desName: 'Devil May Cry 5', name: 'Devil May Cry 5', cata: 'Action-Adventure-RPG', price: '$25.00', salePrice: 'Free' },
-        { gameImg: f2, desName: 'The Elder Scrolls® Online', name: 'The Elder Scrolls® Online', cata: 'Adventure-Open World-RPG', price: '$8.00', salePrice: 'Free' },
+        { gameImg: f3, desName: 'Fallout 76', name: 'Fallout 76', cata: 'Adventure-Open World-RPG', price: '$8.00', salePrice: 'Free' },
+    ];
+
+    const cataCar = [
+        { cardImg: cataCar1 },
+        { cardImg: cataCar2 },
+        { cardImg: cataCar3 },
+        { cardImg: cataCar4 },
+        { cardImg: cataCar5 },
+        { cardImg: cataCar6 },
+        { cardImg: cataCar7 },
     ];
 
     const addToCart = (game) => {
@@ -105,40 +127,7 @@ const MainPage = () => {
     return (
         <>
             <NavBarHead />
-            <div className="logoCon">
-                <h3>PirateMob</h3>
-                <img src={logo} alt="Logo" />
-            </div>
-
-            {/* mini navbar */}
-            <div className="miniNavBarCon">
-                <div className="miniNavBar">
-                    <div className="miniNav-links">
-                        <Link to="/" className="miniNav-link">Home</Link>
-                        <div className="miniGenre-dropdown">
-                            <Link to="#" className="miniNav-link">Categories</Link>
-                            <div className="miniDropdown-menu">
-                                <Link to="/comedy" className="miniDropdown-item">Comedy</Link>
-                                <Link to="#" className="miniDropdown-item">Horror</Link>
-                                <Link to="#" className="miniDropdown-item">RPG</Link>
-                                <Link to="#" className="miniDropdown-item">Adventure</Link>
-                                <Link to="#" className="miniDropdown-item">Action</Link>
-                                <Link to="#" className="miniDropdown-item">Thriller</Link>
-                                <Link to="#" className="miniDropdown-item">Mystery</Link>
-                                <Link to="#" className="miniDropdown-item">Family</Link>
-                                <Link to="#" className="miniDropdown-item">War</Link>
-                            </div>
-                        </div>
-                        <Link to="/toppicks" className="miniNav-link">Community</Link>
-                        <Link to="/toppicks" className="miniNav-link">News</Link>
-                        <Link to="/toppicks" className="miniNav-link">Add On</Link>
-                    </div>
-                    <div className="miniSearch-bar">
-                        <input type="text" placeholder="Search..." />
-                        <img src={cartLogo} alt="Cart Logo" />
-                    </div>
-                </div>
-            </div>
+            <MiniNav></MiniNav>
 
             {/* 1st game list */}
             <div className="gameCon">
@@ -177,6 +166,11 @@ const MainPage = () => {
                 </Carousel>
             </div>
 
+            {/* banner 1 */}
+            <div className='ban1Con'>
+                <img src={ban1}></img>
+            </div>
+
             {/* discount list */}
             <h3 className='salesHead'>ON SALE</h3>
             <div className="gameCon">
@@ -198,9 +192,21 @@ const MainPage = () => {
                 </div>
             </div>
 
+            {/* Category */}
+            <div className='carouselCon cataCarousel'>
+                <h3>Category</h3>
+                <Carousel responsive={responsive}>
+                    {cataCar.map((game, index) => (
+                        <div key={index} className="carousel-item cataCarousel-item">
+                            <img src={game.cardImg} />
+                        </div>
+                    ))}
+                </Carousel>
+            </div>
+
              {/* giftbox */}
              <div className='giftHeadCon'>
-                <h3 className='giftHead'>Free This Week</h3>
+                <h3 className='giftHead'>Free Week</h3>
                 <img src={giftBox}></img>
              </div>
              <div className="freegameCon">
