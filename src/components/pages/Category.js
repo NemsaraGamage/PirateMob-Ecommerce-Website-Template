@@ -22,11 +22,15 @@ import cgL14 from '../pics/gameLis/14.jpg';
 import cgL15 from '../pics/gameLis/15.jpg';
 import cgL16 from '../pics/gameLis/16.jpg';
 
-import 'react-multi-carousel/lib/styles.css';
+import cgL17 from '../pics/gameLis/17.jpg';
+import cgL18 from '../pics/gameLis/18.jpg';
+import cgL19 from '../pics/gameLis/19.jpg';
+import cgL20 from '../pics/gameLis/20.jpg';
+import cgL21 from '../pics/gameLis/21.jpg';
 
 // npm run deploy
 
-const MainPage = () => {
+const CategoryPage = () => {
     const [cart, setCart] = useState([]);
 
     const cataGameList = [
@@ -42,6 +46,12 @@ const MainPage = () => {
         { gameImg: cgL14, desName: 'Dont Starve Together', name: 'Dont Starve Together', cata: 'Action-Adventure-Survival', price: '$3.20' },
         { gameImg: cgL15, desName: 'Fallout 4', name: 'Fallout 4', cata: 'Action-Adventure-RPG', price: '$4.20' },
         { gameImg: cgL16, desName: 'Dark Souls III', name: 'Dark Souls III', cata: 'Action-Adventure-RPG', price: '$1.20' },
+
+        { gameImg: cgL17, desName: 'Subnautica', name: 'Subnautica', cata: 'Action-Adventure-Survival', price: '$2.55' },
+        { gameImg: cgL18, desName: 'God of War Ragnarök', name: 'God of War Ragnarök', cata: 'Action-Adventure-Story', price: '$59.99' },
+        { gameImg: cgL19, desName: 'The last of us I', name: 'The last of us I', cata: 'Action-Adventure-Story', price: '$39.99' },
+        { gameImg: cgL20, desName: 'Rise of the Tomb Raider', name: 'Rise of the Tomb Raider', cata: 'Action-Adventure-Story', price: '$3.22' },
+        { gameImg: cgL21, desName: 'Marvel’s Spider-Man 2', name: 'Marvel’s Spider-Man 2', cata: 'Action-Adventure-Story', price: '$42.22' },
 
         { gameImg: cgL1, desName: 'Hogwarts Legacy', name: 'Hogwarts Legacy', cata: 'Action-Adventure-RPG', price: '$20.00' },
         { gameImg: cgL2, desName: 'ELDEN RING', name: 'ELDEN RING', cata: 'Solus like-Open World-RPG', price: '$14.99' },
@@ -61,7 +71,7 @@ const MainPage = () => {
             <NavBarHead />
             <MiniNav></MiniNav>
 
-            <h3 className='cataPageHead'>Category</h3>
+            <h3 className='PageHead'>Category</h3>
 
             <div className="gameCon">
                 <div className="game-container">
@@ -86,4 +96,4 @@ const MainPage = () => {
     );
 };
 
-export default MainPage;
+export default CategoryPage;
