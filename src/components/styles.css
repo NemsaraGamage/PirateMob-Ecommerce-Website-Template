@@ -688,9 +688,9 @@ body {
 /* --------------------- Common --------------------- */
 
 .PageHead{
-    margin: 50px 0 50px 0;
+    margin: 50px 0 45px 0;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     color: #fff;
     font-family: 'BonaNovaSC-Regular';
     letter-spacing: 0.1em;
@@ -754,6 +754,93 @@ body {
     font-size: 12px;
     font-weight: bold;
 }
+
+.addOnCon {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* --------------------- Add on --------------------- */
+
+.addOnCon {
+    background-color: #28282B;
+    display: flex; /* Added */
+    justify-content: center; /* Ensure container is centered horizontally */
+    align-items: center; /* Ensure container is centered vertically */
+}
+
+.addOn-container {
+    display: flex; /* Added */
+    justify-content: center; /* Ensures items inside the container are centered */
+}
+
+.addOn-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.addOn-grid-item {
+    padding-top: 10px;
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.addOnImg img {
+    display: inline-block;
+    max-width: 40%;
+    margin: 0 2%;
+    vertical-align: top;
+    border-radius: 2px;
+}
+
+.addOn-grid-item p {
+    width: 460px;
+    margin: 10px auto; /* Centering the paragraph within its container */
+    font-size: 1rem;
+    word-wrap: break-word; /* Ensuring text wraps within the specified width */
+    text-align: center; /* Center the text within the paragraph */
+}
+
+.addOn-grid-item p:nth-of-type(1){
+    font-size: 27px;
+    font-weight: 700;
+    font-family: 'Signika-VariableFont_GRAD';
+    margin-bottom: 25px;
+    margin-top: 20px;
+    color: #006994;
+}
+
+.addOn-grid-item p:nth-of-type(2){
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Oxygen-Regular';
+    margin-bottom: 25px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.addOn-grid-item button{
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #004080;
+    background-color: #004466;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Signika-VariableFont_GRAD';
+    margin-left: 16px;
+}
+
 
 @media (max-width: 1100px) {
 
@@ -1072,6 +1159,16 @@ body {
 
     .freegame-grid-item img {
         height: 250px;
+    }
+
+    /* add on */
+
+    .addOn-grid-item p:nth-of-type(1){
+        font-size: 24px;
+    }
+    
+    .addOn-grid-item p:nth-of-type(2){
+        font-size: 12px;
     }
 
 }
