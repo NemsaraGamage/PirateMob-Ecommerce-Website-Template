@@ -46,6 +46,7 @@ const AddOn = () => {
 
                                 <p>{addOn.Name}</p>
                                 <p>{addOn.msg}</p>
+                                <p>{addOn.price}</p>
                                 <button>Add Cart</button>
                                 
                             </div>

@@ -13,7 +13,7 @@ const NavBar = () => {
       <div className="nav-links">
         <Link to="/" className="nav-link">Home</Link>
         <Link to="/" className="nav-link">About</Link>
-        <Link to="/toppicks" className="nav-link">Community</Link>
+        <Link to="/CommunityPage" className="nav-link">Community</Link>
       </div>
       <div className="search-bar">
         <input type="text" placeholder="Search..." />
