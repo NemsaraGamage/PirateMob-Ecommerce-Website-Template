@@ -787,6 +787,9 @@ body {
     border-radius: 14px;
     text-align: center;
     margin-bottom: 30px;
+    border: 2px solid white;
+    padding-bottom: 12px;
+    padding-top: 10px;
 }
 
 .addOnImg img {

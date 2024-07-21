@@ -37,7 +37,7 @@ const MiniNav = () => {
                             </div>
                         </div>
                         <Link to="/CommunityPage" className="miniNav-link">Community</Link>
-                        <Link to="/toppicks" className="miniNav-link">News</Link>
+                        <Link to="/" className="miniNav-link">News</Link>
                         <Link to="/Addon" className="miniNav-link">Add On</Link>
                     </div>
                     <div className="miniSearch-bar">
