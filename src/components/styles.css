@@ -1036,7 +1036,11 @@ body {
     }
 
     .miniDropdown-menu {
-        width: 100%;
+        width: 110%;
+    }
+
+    .miniDropdown-item {
+        padding: 10px 8px;
     }
 
     /* carsoul */
@@ -1157,7 +1161,7 @@ body {
     }
 
     .carousel-item img {
-        width: 100%;
+        width: 90%;
         height: 240px;
     }
 
@@ -1167,6 +1171,10 @@ body {
     }
 
     /* cata  carsoul */
+    .carousel-item {
+        
+    }
+
     .cataCarousel-item img{
         width: 75%;
         height: 320px;
@@ -1180,12 +1188,16 @@ body {
 
     /* add on */
 
+    .addOn-grid-item p {
+        width: 420px;
+    }
+
     .addOn-grid-item p:nth-of-type(1){
         font-size: 24px;
     }
     
     .addOn-grid-item p:nth-of-type(2){
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .addOnImg img { 
