@@ -37,7 +37,7 @@ import s10 from '../pics/gameLis/s10.jpg';
 import giftBox from '../pics/g3.png';
 
 import f1 from '../pics/gameLis/f1.jpg';
-import f2 from '../pics/gameLis/f2.jpg';
+import f2 from '../pics/gameLis/f2.jpeg';
 import f3 from '../pics/gameLis/f3.jpg';
 
 import ban1 from '../pics/ban1.jpg';
@@ -88,6 +88,7 @@ const MainPage = () => {
     const freeGames = [
         { gameImg: f1, desName: 'Devil May Cry 5', name: 'Devil May Cry 5', cata: 'Action-Adventure-RPG', price: '$25.00', salePrice: 'Free' },
         { gameImg: f3, desName: 'Fallout 76', name: 'Fallout 76', cata: 'Adventure-Open World-RPG', price: '$8.00', salePrice: 'Free' },
+        { gameImg: f2, desName: 'Stardew Valley', name: 'Stardew Valley', cata: 'Adventure-Farming Sim-Story', price: '$4.85', salePrice: 'Free' },
     ];
 
     const cataCar = [

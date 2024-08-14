@@ -499,23 +499,6 @@ body {
 
 /* free games */
 
-.freegameCon {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.freegame-container {
-    max-width: 1200px; 
-    width: 100%;
-}
-
-.freegame-grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr)); /* Adjust the minmax value as needed */
-    gap: 20px; /* Adjust the gap between items as needed */
-}
-
 .giftHeadCon {
     display: flex; /* Use flexbox layout */
     align-items: center; /* Center items vertically */
@@ -540,6 +523,23 @@ body {
     /* margin-left: 15px;  */
 }
 
+.freegameCon {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.freegame-container {
+    max-width: 1200px; 
+    width: 100%;
+}
+
+.freegame-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(385px, 1fr)); /* Adjust the minmax value as needed */
+    gap: 20px; /* Adjust the gap between items as needed */
+}
+
 .freegame-grid-item {
     display: flex;
     flex-direction: column;
@@ -556,7 +556,7 @@ body {
 
 .freegame-grid-item img {
     width: 100%;
-    height: 320px;
+    height: 250px;
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     border-radius: 5px 5px 0 0;
 }
@@ -755,11 +755,6 @@ body {
     font-weight: bold;
 }
 
-.addOnCon {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
 /* --------------------- Add on --------------------- */
 
 .addOnCon {
@@ -784,10 +779,10 @@ body {
 
 .addOn-grid-item {
     padding-top: 10px;
-    border-radius: 14px;
     text-align: center;
     margin-bottom: 30px;
-    border: 2px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     padding-bottom: 12px;
     padding-top: 10px;
 }
@@ -852,7 +847,6 @@ body {
     margin-left: 16px;
 }
 
-
 @media (max-width: 1100px) {
 
      /* carsoul */
@@ -867,7 +861,14 @@ body {
         width: 78%;
         height: 220px;
     }
-    
+
+    /* free games */
+    .freegame-grid-item img {
+        width: 100%;
+        height: 280px;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        border-radius: 5px 5px 0 0;
+    }
 }
 
 @media (max-width: 1025px) {
@@ -1119,9 +1120,9 @@ body {
 
     /* --------------------- Common --------------------- */
 
-.PageHead{
-    font-size: 35px;
-}
+    .PageHead{
+        font-size: 35px;
+    }
 
 }
 
@@ -1203,5 +1204,208 @@ body {
     .addOnImg img { 
         max-width: 46%;
     }
+
+}
+
+/* mobile */
+
+/* ip 14 */
+@media (max-width: 431px) {
+
+    /* header */
+    .logoCon h3{
+        font-size: 2.8em;
+    }
+
+     /* game item */
+    .game-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust the minmax value as needed */
+        gap: 35px; /* Adjust the gap between items as needed */
+    }
+
+    .game-grid-item img {
+        width: 198px;
+        height: 260px;
+    }
+
+    /* carousel */
+    .carousel-item {
+        margin-left: 1px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+    }
+
+    /* ---------- community -------- */
+    
+    .community-grid-container {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .community-grid-item {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .community-container {
+        padding: 10px; /* Adjust container padding */
+    }
+
+    .addOnCon {
+        padding: 10px; /* Adjust add-on container padding */
+    }
+
+    /* ---------- community -------- */
+
+    .addOn-grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .addOn-grid-item p {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .addOnImg img {
+        max-width: 95%; 
+        margin-top: 15px;
+    }
+
+    .addOn-grid-item button {
+        padding: 8px;
+        font-size: 9px;
+        margin-left: 8px;
+    }
+
+}
+
+/* s24 */
+@media (max-width: 413px) {
+
+    /* header */
+    .logoCon h3{
+        font-size: 2.7em;
+    }
+
+    /* game item */
+    .game-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjust the minmax value as needed */
+        gap: 36px; /* Adjust the gap between items as needed */
+    }
+
+    /* carousel */
+    .carousel-item {
+        margin-left: 1px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+    }
+
+    /* category */
+    .cataCarousel img {
+        width: 95%;
+        height: 300px;
+    }
+
+    /* free games */
+
+    .giftHead {
+        font-size: 37px;
+    }
+
+    .freegame-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); /* Adjust the minmax value as needed */
+    }
+
+    .freegame-grid-item img {
+        width: 100%;
+        height: 210px;
+    }
+
+    /* ---------- community -------- */
+
+    .community-grid-container {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .community-grid-item {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .community-container {
+        padding: 10px; /* Adjust container padding */
+    }
+
+    .addOnCon {
+        padding: 10px; /* Adjust add-on container padding */
+    }
+}
+
+/* ip 13pro */
+@media (max-width: 391px) {
+
+     /* header */
+     .logoCon h3{
+        font-size: 2.5em;
+    }
+
+    /* game item */
+    .game-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Adjust the minmax value as needed */
+        gap: 35px; /* Adjust the gap between items as needed */
+    }
+
+    .game-grid-item img {
+        width: 178px;
+        height: 250px;
+    }
+    
+}
+
+/* s24 ultra */
+@media (max-width: 361px) {
+
+     /* header */
+     .logoCon h3{
+        font-size: 2.4em;
+    }
+
+    /* game item */
+    .game-grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); /* Adjust the minmax value as needed */
+        gap: 35px; /* Adjust the gap between items as needed */
+    }
+
+    .game-grid-item img {
+        width: 164px;
+        height: 248px;
+    }
+
+    /* free games */
+
+    .giftHead {
+        font-size: 30px;
+    }
+
+    .freegame-grid-item img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .freegame-grid-item p {
+        font-size: 22px;
+    }
+    
+    .freegame-grid-item p:nth-of-type(2) {
+        font-size: 16px;
+    }
+
+    .freegame-button-container p {
+        font-size: 13px;
+    }
+    
 
 }
